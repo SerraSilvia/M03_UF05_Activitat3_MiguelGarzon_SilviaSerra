@@ -12,7 +12,7 @@ fun main() {
     while (continuar) {
         try {
             println("Introduzca la operación (+, -, *, /) o 'Z' para salir: ")
-            val resUs = scanner.next().toUpperCase()
+            val resUs = scanner.next().uppercase()
 
             if (resUs.length != 1 || !"+-*/Z".contains(resUs[0])) {
                 throw OperacionInvalidaException()
