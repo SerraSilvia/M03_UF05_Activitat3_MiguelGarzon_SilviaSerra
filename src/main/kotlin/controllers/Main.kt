@@ -1,10 +1,13 @@
 package org.example.controllers
+import models.DividirDosNumsInt
 
 
 import models.Calculadora
 import models.OperacionInvalidaException
 import java.util.Scanner
 
+
+//Exercci2:
 fun main() {
     val scanner = Scanner(System.`in`)
     var continuar = true
@@ -35,4 +38,14 @@ fun main() {
             println("Error inesperado. Por favor, intente de nuevo.")
         }
     }
+
+
+
+    //Exercici1:
+    val dividir2 = DividirDosNumsInt(0,0)
+    val resultat = dividir2.dividirDosInt()
+
+    println("El resultat de dividir 2 numeros enters és: $resultat")
+    println("El programa segueix per aquí")
+
 }
