@@ -7,7 +7,6 @@ import models.OperacionInvalidaException
 import java.util.Scanner
 
 
-//Exercci2:
 fun main() {
     val scanner = Scanner(System.`in`)
     var continuar = true
@@ -19,7 +18,7 @@ fun main() {
     println("El resultat de dividir 2 numeros enters és: $resultat")
     println("El programa segueix per aquí")
 
-
+    //Exercci2:
     while (continuar) {
         try {
             println("Introduzca la operación (+, -, *, /) o 'Z' para salir: ")
