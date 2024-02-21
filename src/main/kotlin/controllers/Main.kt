@@ -6,13 +6,9 @@ fun main() {
 
     fun main(){
         val dividir2 = DividirDosNumsInt(0,0)
-        dividir2.dividirDosInt()
-        try {
-            println("${dividir2}")
-        } catch (e: ArrayIndexOutOfBoundsException) {
-            println(e.message)
-            e.printStackTrace()
-        }
+        val resultat = dividir2.dividirDosInt()
+
+        println("El resultat de dividir 2 numeros enters és: $resultat")
         println("El programa segueix per aquí")
     }
 
