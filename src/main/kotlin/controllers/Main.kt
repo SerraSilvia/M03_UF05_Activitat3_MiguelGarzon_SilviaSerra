@@ -12,6 +12,14 @@ fun main() {
     val scanner = Scanner(System.`in`)
     var continuar = true
 
+    //Exercici1:
+    val dividir2 = DividirDosNumsInt(0,0)
+    val resultat = dividir2.dividirDosInt()
+
+    println("El resultat de dividir 2 numeros enters és: $resultat")
+    println("El programa segueix per aquí")
+
+
     while (continuar) {
         try {
             println("Introduzca la operación (+, -, *, /) o 'Z' para salir: ")
@@ -39,13 +47,5 @@ fun main() {
         }
     }
 
-
-
-    //Exercici1:
-    val dividir2 = DividirDosNumsInt(0,0)
-    val resultat = dividir2.dividirDosInt()
-
-    println("El resultat de dividir 2 numeros enters és: $resultat")
-    println("El programa segueix per aquí")
 
 }
