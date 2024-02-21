@@ -1,4 +1,6 @@
 package models
+import RED
+import RESET
 import java.util.Scanner
 
 class DividirDosNumsInt {
@@ -29,9 +31,9 @@ class DividirDosNumsInt {
 
                 return num / num2
             }catch (e: NumberFormatException) {
-                println("Error: Debes ingresar un número válido. Inténtalo de nuevo.")
+                println("${RED}Error: Ingressa un número vàlid.$RESET")
             } catch (e: ArithmeticException) {
-                println("Error: No se puede dividir por cero. Inténtalo de nuevo.")
+                println("${RED}Error: No es pot dividir per zero.$RESET")
             }
         }
     }
