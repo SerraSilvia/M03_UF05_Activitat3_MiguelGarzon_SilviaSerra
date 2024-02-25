@@ -3,6 +3,7 @@ import models.DividirDosNumsInt
 
 
 import models.Calculadora
+import models.Figura
 import models.OperacionInvalidaException
 import java.util.Scanner
 
@@ -45,6 +46,16 @@ fun main() {
             println("Error inesperado. Por favor, intente de nuevo.")
         }
     }
+//Exercici 3
+    try {
+        val triangle = Figura(3, 5, 7, 10)
+        println("Perímetre del triangle: ${triangle.perimetre()}")
 
+        val quadrat = Figura(4, 4, 4, 4, 4) // Això és correcte
+        println("Perímetre del quadrat: ${quadrat.perimetre()}")
 
+        // Aquesta línia llençarà una excepció ja que el nombre de costats és inferior a 3
+    } catch (ex: IllegalArgumentException) {
+        println("Error: ${ex.message}")
+    }
 }
